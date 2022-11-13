@@ -1,0 +1,18 @@
+.reply {
+  padding: 2rem;
+  display: flex;
+}
+.reply__input::placeholder {
+  color: var(--color-text-secondary);
+}
+.reply__input {
+  margin-right: 2rem;
+  color: var(--color-text);
+  border-radius: 2px;
+  background: var(--color-tertiary);
+  border: 0;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  outline: none;
+  width: 100%;
+}

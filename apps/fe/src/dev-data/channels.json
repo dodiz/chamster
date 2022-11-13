@@ -1,0 +1,27 @@
+[
+  {
+    "id": "8392081",
+    "name": "Coffee break",
+    "description": "Take a coffee break with your friends"
+  },
+  {
+    "id": "8392082",
+    "name": "Meme channel",
+    "description": "Share dumb memes all day"
+  },
+  {
+    "id": "8392083",
+    "name": "Support",
+    "description": "Need help? Post here"
+  },
+  {
+    "id": "8392084",
+    "name": "Important stuff",
+    "description": "Announcements go here! Do not spam!"
+  },
+  {
+    "id": "8392085",
+    "name": "Shop",
+    "description": "Need to sell something? Here's the right place!"
+  }
+]

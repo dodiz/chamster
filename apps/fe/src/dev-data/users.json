@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3892083093392038",
+    "username": "Asete kabai",
+    "email": "asete@kabai.it",
+    "role": "admin"
+  },
+  {
+    "id": "3892083093392037",
+    "username": "Kobi Teste",
+    "email": "kobi@teste.it",
+    "role": "admin"
+  },
+  {
+    "id": "3892083093392036",
+    "username": "San Morie",
+    "email": "San@morie.it",
+    "role": "user"
+  },
+  {
+    "id": "3892083093392035",
+    "username": "Tes Cat",
+    "email": "tes@cat.it",
+    "role": "user"
+  },
+  {
+    "id": "3892083093392034",
+    "username": "Neigi Letesta",
+    "email": "neigi@letesta.it",
+    "role": "user"
+  },
+  {
+    "id": "3892083093392033",
+    "username": "Huen Lart",
+    "email": "huen@lart.it",
+    "role": "user"
+  }
+]
