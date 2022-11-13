@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Channel } from "../../../models/Channel";
+import { Channel } from "@chamster/chamster/models";
 import "./channels-list.css";
 
 export const Channels: FC = () => {

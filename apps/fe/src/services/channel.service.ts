@@ -1,5 +1,5 @@
+import { Channel } from "@chamster/models";
 import channelsData from "../dev-data/channels.json";
-import { Channel } from "../models/Channel";
 /*
 import SockJS from "sockjs-client";
 const ws = new SockJS("http://localhost:8080/ws");
