@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { userSlice } from "./user/userSlice";
+import { counterSlice } from "./counter/counterSlice";
+import { authSlice } from "./auth/authSlice";
 
 export const store = configureStore({
   reducer: {
     user: userSlice.reducer,
+    auth: authSlice.reducer,
+    counter: counterSlice.reducer,
   },
 });
 
@@ -14,4 +18,4 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppDispatch = useDispatch<AppDispatch>;

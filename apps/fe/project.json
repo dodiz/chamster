@@ -13,7 +13,7 @@
         "outputPath": "dist/apps/fe",
         "index": "apps/fe/src/index.html",
         "baseHref": "/",
-        "main": "apps/fe/src/main.tsx",
+        "main": "apps/fe/src/index.tsx",
         "polyfills": "apps/fe/src/polyfills.ts",
         "tsConfig": "apps/fe/tsconfig.app.json",
         "assets": ["apps/fe/src/favicon.ico", "apps/fe/src/assets"],

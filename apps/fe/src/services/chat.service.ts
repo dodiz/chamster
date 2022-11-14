@@ -22,7 +22,7 @@ export const chatService = {
       id: "",
       user: { id: "123", username: "ciao", email: "", role: "user" },
       content,
-      date: new Date(Date.now()),
+      iat: new Date(Date.now()),
     };
   },
 };

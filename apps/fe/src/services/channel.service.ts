@@ -1,5 +1,4 @@
 import { Channel } from "@chamster/models";
-import channelsData from "../dev-data/channels.json";
 /*
 import SockJS from "sockjs-client";
 const ws = new SockJS("http://localhost:8080/ws");
@@ -18,21 +17,14 @@ ws.onmessage = ({ data }) => {
 };
 */
 
-let channels: Channel[] = [...channelsData];
+const channels: Channel[] = [
+  {
+    id: "1",
+    name: "Channel",
+    description: "Description",
+  },
+];
 
 export const channelService = {
-  async getAll() {
-    return channels;
-  },
-  async insert(name: string, description: string) {
-    const newchannel = { id: Math.random().toString(), description, name };
-    channels.push(newchannel);
-    return newchannel;
-  },
-  async remove(id: string) {
-    channels = channels.filter((channel: Channel) => channel.id !== id);
-  },
-  async update(channel: Channel) {
-    return null;
-  },
+  getAll: async () => channels,
 };

@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { User } from "../../models/User";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { User } from "@chamster/models";
 
 interface PaginatedUsers {
   currentPage: number;
@@ -19,4 +19,5 @@ export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {},
+  extraReducers: {},
 });

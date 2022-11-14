@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
+import { Message } from "@chamster/models";
 import { Reply } from "../Reply";
-import { Message } from "../../../models/Message";
 import { chatService } from "../../../services/chat.service";
 
 import "./channel.css";
@@ -31,7 +31,7 @@ export const Channel = () => {
         {messages.map((m) => (
           <div key={m.id} className="channel__message">
             <div className="channel__message-top">
-              {m.user.username} - {m.date.getTime()}
+              {m.user.username} - {m.iat.getTime()}
             </div>
             {m.content}
           </div>
