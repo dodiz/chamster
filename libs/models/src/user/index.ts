@@ -1,3 +1,3 @@
 export * from "./User";
-export * from "./UserSiginingIn";
-export * from "./UserSiginingUp";
+export * from "./UserSigningIn";
+export * from "./UserSigningUp";
