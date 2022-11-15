@@ -1,13 +1,14 @@
 import { Module } from "@nestjs/common";
-import { ConfigModule } from "@nestjs/config";
 import { MongooseModule } from "@nestjs/mongoose";
+import { ConfigModule } from "./config/config.module";
+import { configuration } from "./config/configuration";
 import { IConfig } from "./config/IConfig";
 
 @Module({
   imports: [
     ConfigModule,
     MongooseModule.forRootAsync({
-      inject: ["idk"],
+      inject: [configuration.KEY],
       useFactory: ({ db }: IConfig) => {
         return {
           uri: db.domain,
