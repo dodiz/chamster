@@ -3,10 +3,10 @@ networks:
   ms-user:
     name: ms-user
 volumes:
-  ms-user-db-data:
-    name: ms-user-db-data
-  ms-user-db-config:
-    name: ms-user-db-config
+  chamster-user-db-data:
+    name: chamster-user-db-data
+  chamster-user-db-config:
+    name: chamster-user-db-config
 
 services:
   ms-user-db:
@@ -22,10 +22,10 @@ services:
     volumes:
       - type: volume
         target: /data/db
-        source: ms-user-db-data
+        source: chamster-user-db-data
       - type: volume
         target: /data/configdb
-        source: ms-user-db-config
+        source: chamster-user-db-config
 
   ms-user-db-express:
     image: mongo-express
