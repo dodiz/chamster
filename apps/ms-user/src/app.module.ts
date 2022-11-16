@@ -10,8 +10,8 @@ import { AuthModule } from "./auth/auth.module";
 
 @Module({
   imports: [
-    CoreModule,
     ConfigModule,
+    CoreModule,
     MongooseModule.forRootAsync({
       inject: [configuration.KEY],
       useFactory: ({ db }: IConfig) => {

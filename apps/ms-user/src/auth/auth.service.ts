@@ -1,17 +1,15 @@
-import { UserSiginingUp, UserSigningIn } from "@chamster/models";
+import { UserSignedIn, UserSignedUp } from "@chamster/models";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class AuthService {
-  signin(userSigningIn: UserSigningIn) {
+  signin(userSignedIn: UserSignedIn) {
     return {
-      user: userSigningIn,
       token: "jkfdlsjlksjfskd",
     };
   }
-  signup(userSiginingUp: UserSiginingUp) {
+  signup(userSignedUp: UserSignedUp) {
     return {
-      user: userSiginingUp,
       token: "fioeurwoeiuioew",
     };
   }

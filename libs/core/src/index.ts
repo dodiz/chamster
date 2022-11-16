@@ -1,4 +1,4 @@
-export * from "./core";
+export * from "./core.module";
 export * from "./exceptions";
 export * from "./filters";
 export * from "./pipes";

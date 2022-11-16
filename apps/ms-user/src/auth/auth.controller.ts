@@ -1,18 +1,18 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import { UserSiginingUp, UserSigningIn } from "@chamster/models";
+import { UserSignedUp, UserSignedIn } from "@chamster/models";
 
 @Controller("auth")
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post("signup")
-  signup(@Body() userSigningUp: UserSiginingUp) {
-    return this.authService.signup(userSigningUp);
+  signup(@Body() userSignedUp: UserSignedUp) {
+    return this.authService.signup(userSignedUp);
   }
   @Post("signin")
-  signin(@Body() userSiginingIn: UserSigningIn) {
-    return this.authService.signin(userSiginingIn);
+  signin(@Body() userSignedIn: UserSignedIn) {
+    return this.authService.signin(userSignedIn);
   }
   @Post("signout")
   signout() {

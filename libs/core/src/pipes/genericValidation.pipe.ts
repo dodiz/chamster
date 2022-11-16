@@ -1,12 +1,9 @@
-import {
-  Injectable,
-  ValidationPipe as NestValidationPipe,
-} from "@nestjs/common";
+import { Injectable, ValidationPipe } from "@nestjs/common";
 /* import { ValidationError } from "class-validator";
 import { ValidationException } from ".."; */
 
 @Injectable()
-export class ValidationPipe extends NestValidationPipe {
+export class GenericValidationPipe extends ValidationPipe {
   constructor() {
     super({
       whitelist: true,

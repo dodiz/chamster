@@ -8,7 +8,6 @@ import { IConfig } from "./config/IConfig";
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get<IConfig>(configuration.KEY);
-  app.enableCors();
   app.setGlobalPrefix(config.globalPrefix);
   await app.listen(config.port);
   Logger.log(

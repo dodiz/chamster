@@ -1,1 +1,1 @@
-export * from './validation.pipe';
+export * from "./genericValidation.pipe";
