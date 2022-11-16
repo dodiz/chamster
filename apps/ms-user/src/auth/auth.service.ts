@@ -18,7 +18,4 @@ export class AuthService {
   signout() {
     return { status: "success" };
   }
-  test() {
-    return {};
-  }
 }
