@@ -1,11 +1,10 @@
 import { useCallback } from "react";
-import { useSelector } from "react-redux";
-import { useAppDispatch } from "../store";
+import { useDispatch, useSelector } from "react-redux";
 import { countSelector } from "./counterSelectors";
 import { counterSlice } from "./counterSlice";
 
 export const useCounter = () => {
-  const dispatch = useAppDispatch();
+  const dispatch = useDispatch();
   const count = useSelector(countSelector);
 
   const next = useCallback(() => {

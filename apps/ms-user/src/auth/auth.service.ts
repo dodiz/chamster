@@ -5,12 +5,20 @@ import { Injectable } from "@nestjs/common";
 export class AuthService {
   signin(userSigningIn: UserSigningIn) {
     return {
+      user: userSigningIn,
       token: "jkfdlsjlksjfskd",
     };
   }
   signup(userSiginingUp: UserSiginingUp) {
     return {
+      user: userSiginingUp,
       token: "fioeurwoeiuioew",
     };
+  }
+  signout() {
+    return { status: "success" };
+  }
+  test() {
+    return {};
   }
 }
