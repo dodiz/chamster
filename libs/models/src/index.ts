@@ -1,3 +1,2 @@
-export * from "./user";
-export * from "./Message";
-export * from "./Channel";
+export * from "./dtos";
+export * from "./responses";

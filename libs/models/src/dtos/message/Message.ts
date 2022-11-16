@@ -1,4 +1,4 @@
-import { User } from "./user/User";
+import { User } from "..";
 
 export interface Message {
   id: string;
