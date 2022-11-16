@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@chamster/chamster/models": ["libs/chamster/models/src/index.ts"],
+      "@chamster/core": ["libs/core/src/index.ts"],
       "@chamster/models": ["libs/models/src/index.ts"]
     }
   },
