@@ -5,7 +5,7 @@ import {
   ContainsSpecialCharacter,
   ContainsUpperLetter,
 } from "../../validators";
-export class UserSigningUp {
+export class UserSignedUp {
   @IsEmail()
   email: string;
   @IsString()
