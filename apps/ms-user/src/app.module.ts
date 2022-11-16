@@ -1,11 +1,16 @@
 import { Module } from "@nestjs/common";
 import { MongooseModule } from "@nestjs/mongoose";
+import { CoreModule } from "@chamster/core";
+
 import { ConfigModule } from "./config/config.module";
 import { configuration } from "./config/configuration";
 import { IConfig } from "./config/IConfig";
 
+import { AuthModule } from "./auth/auth.module";
+
 @Module({
   imports: [
+    CoreModule,
     ConfigModule,
     MongooseModule.forRootAsync({
       inject: [configuration.KEY],
@@ -21,6 +26,7 @@ import { IConfig } from "./config/IConfig";
         };
       },
     }),
+    AuthModule,
   ],
 })
 export class AppModule {}
